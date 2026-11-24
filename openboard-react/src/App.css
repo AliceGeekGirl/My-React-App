@@ -165,30 +165,92 @@ footer{
 }
 
 
-@media (max-width: 768px){
-    .filtros{
-        display: none;
+@media (max-width: 768px) {
+    header,
+    .hero,
+    .conteudo,
+    .depoimentos,
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 100%;
     }
 
-    .vagas__header{
+    header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .conteudo {
         flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 24px;
     }
 
-    .vagas__card{
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .vagas__body{
-        padding-left: 10px;
-        padding-bottom: 40px;
-    }
-
-    .vagas__actions{
+    .filtros {
         width: 100%;
-        padding: 10px;
+    }
+
+    .vagas {
+        padding-left: 0;
+    }
+
+    .vagas__header {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .vagas__card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .vagas__body {
+        padding-left: 0;
+        padding-bottom: 12px;
+    }
+
+    .vagas__title {
+        font-size: 24px;
+        word-break: break-word;
+    }
+
+    .vagas__actions {
+        width: 100%;
+        padding-top: 12px;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px;
         border-top: 1px solid #e5e5e3;
+    }
+
+    .depoimentos {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .depoimentos__list {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 24px;
+        gap: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
     }
 }
