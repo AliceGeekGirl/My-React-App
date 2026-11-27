@@ -133,7 +133,22 @@ header > div {
 .vagas__actions {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    align-items: flex-end;
+    gap: 10px;
+    width: 160px;
+}
+.vagas__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-right: 8px;
+}
+
+.vagas__card,
+.filtros {
+    min-width: 0;
 }
 
 .filtros {
