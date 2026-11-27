@@ -7,6 +7,7 @@ function Depoimentos() {
     <section className="depoimentos">
       {/* Título da seção */}
       <h2>Depoimentos</h2>
+      <p>Depoimentos de recrutadores e candidatos que ja fecharam vaga por aqui.</p>
 
       {/* Lista que reúne os cartões na tela */}
       <div className="depoimentos__list">

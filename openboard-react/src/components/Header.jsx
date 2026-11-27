@@ -5,7 +5,8 @@ function Header() {
   return (
     <header>
       {/* Logo/nome do site que leva de volta para a tela inicial (/)*/}
-      <Link to="/">OpenBoard</Link>
+      <Link to="/">
+      <h1>OpenBoard</h1></Link>
 
       {/* Link que abre a tela de cadastrar nova vaga (/publicar) */}
       <Link to="/publicar">Publicar vaga</Link>
