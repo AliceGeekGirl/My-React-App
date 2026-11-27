@@ -1,16 +1,25 @@
-# React + Vite
+# OpenBoard em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Integrantes
+Alice da Cruz Justi    
+GitHub: AliceGeekGirl
 
-Currently, two official plugins are available:
+Beatriz Sartor Perego  
+GitHub: BeatrizSartorPerego
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Como rodar
+1. npm install
 
-## React Compiler
+2. npm run dev
+   
+3. Abrir http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requisitos funcionais
+[x] RF1 Home do OpenBoard  
+[ ] RF2 Vagas vindas da API  
+[ ] RF3 Newsletter  
+[ ] RF4 Filtros e título da aba  
+[ ] RF5 Busca por cargo  
+[ ] RF6 Detalhe da vaga e navegação  
+[ ] RF7 Cadastro de vaga  
+[ ] RF8 Vaga cadastrada fica salva  
