@@ -1,150 +1,173 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #fafaf9;
-    color: #111111;
-
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
+body {
+    background-color: #18161c;
+    color: #f5f2f7;
+    font-family: "Plus Jakarta Sans", "Roboto Slab", sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
-    border-bottom: 1px solid #e5e5e3;
+    background-color: #23202a;
+    border-bottom: 1px solid #383244;
 }
 
-.hero{
+header a {
+    color: #f5f2f7;
+    text-decoration: none;
+}
+
+.hero {
     padding: 100px 40px;
     text-align: center;
 }
 
-.hero h2{
-   font-size: 48px; 
+.hero h2 {
+    font-size: 48px;
+    color: #f5f2f7;
 }
 
-.hero p{
-    margin-bottom: 32px
+.hero p {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    color: #cfc8d8;
 }
 
-.btn{
-    color: #ffffff;
-    background-color: #111111;
+.btn {
+    color: #18161c;
+    background-color: #f4a6c6;
     border: none;
     border-radius: 8px;
     padding: 12px 20px;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.conteudo{
+.btn:hover {
+    background-color: #f8bdd5;
+}
+
+.conteudo {
     display: flex;
     flex-direction: row-reverse;
     padding: 40px;
 }
 
-.vagas{
+.vagas {
     width: 100%;
     padding-left: 40px;
 }
 
-.vagas__header{
+.vagas__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.vagas__card{
+.vagas__card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 16px;
     margin: 8px 0;
-    color: #999999;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    color: #cfc8d8;
+    background-color: #23202a;
+    border: 1px solid #383244;
     border-radius: 8px;
 }
 
-.vagas__avatar{
+.vagas__avatar {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
     margin: 8px;
-    background-color: #333;
-    color: #ffffff;
+    background-color: #f4a6c6;
+    color: #18161c;
+    font-weight: bold;
     border-radius: 4px;
 }
 
-.vagas__body{
+.vagas__body {
     width: 100%;
     padding-left: 40px;
 }
 
-.vagas__title{
+.vagas__title {
     padding-bottom: 16px;
     font-size: 32px;
     font-weight: 600;
-    color: #333;
+    color: #f5f2f7;
 }
 
-.vagas__badge{
+.vagas__badge {
     padding: 4px 8px;
-    background-color: #e5e5e3;
+    background-color: #2f2a38;
+    color: #f5f2f7;
     border-radius: 4px;
 }
 
-.vagas__badge--highlight{
-    border: 1px solid #999999;
+.vagas__badge--highlight {
+    border: 1px solid #f4a6c6;
+    color: #f4a6c6;
 }
 
-.vagas__actions{
+.vagas__actions {
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
-.filtros{
+.filtros {
     width: 220px;
+    background-color: #23202a;
+    border: 1px solid #383244;
+    border-radius: 8px;
+    padding: 16px;
 }
 
-.filtros__header{
+.filtros__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
 }
 
-.filtros__itens{
+.filtros__itens {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding-bottom: 20px;
 }
 
-.filtros__itens p{
+.filtros__itens p {
     font-size: 12px;
     font-weight: bold;
+    color: #f4a6c6;
     margin: 8px 0;
 }
 
-.cadastro input{
+.cadastro input {
     padding: 12px 20px;
     font-size: 14px;
-    border: 1px solid #ddd;
+    color: #f5f2f7;
+    background-color: #23202a;
+    border: 1px solid #383244;
     border-radius: 8px;
+    margin-right: 8px;
 }
 
-.depoimentos{
+.depoimentos {
     display: flex;
     padding: 100px 40px;
     flex-direction: column;
@@ -152,18 +175,33 @@ header{
     gap: 12px;
 }
 
-.depoimentos__list{
+.depoimentos__list {
     display: flex;
     padding-top: 40px;
     gap: 32px;
 }
 
-footer{
+.depoimento-card {
+    background-color: #23202a;
+    border: 1px solid #383244;
+    border-radius: 8px;
+    padding: 20px;
+    color: #f5f2f7;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 40px;
+    background-color: #23202a;
+    border-top: 1px solid #383244;
 }
 
+footer a {
+    color: #f4a6c6;
+    text-decoration: none;
+    margin-left: 12px;
+}
 
 @media (max-width: 768px) {
     header,
@@ -234,7 +272,7 @@ footer{
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 8px;
-        border-top: 1px solid #e5e5e3;
+        border-top: 1px solid #383244;
     }
 
     .depoimentos {
@@ -247,6 +285,12 @@ footer{
         width: 100%;
         padding-top: 24px;
         gap: 16px;
+    }
+
+    .cadastro input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     footer {
