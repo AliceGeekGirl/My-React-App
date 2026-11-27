@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "empresa": "Vercel",
+    "cargo": "Full-stack Engineer",
+    "salario": "R$ 20k-30k",
+    "modelo": "Remoto",
+    "tipo": "Efetivo",
+    "area": "Engenharia",
+    "publicada": "4h",
+    "descricao": "Desenvolvimento de aplicações web e interfaces de alta performance."
+  },
+  {
+    "id": 2,
+    "empresa": "SATC Labs",
+    "cargo": "Estagiário de Engenharia de Software",
+    "salario": "R$ 1.8k-2.5k",
+    "modelo": "Híbrido",
+    "tipo": "Estágio",
+    "area": "Engenharia",
+    "publicada": "1d",
+    "descricao": "Apoio no desenvolvimento de sistemas e manutenção de componentes."
+  },
+  {
+    "id": 3,
+    "empresa": "Nubank",
+    "cargo": "Product Designer",
+    "salario": "R$ 12k-16k",
+    "modelo": "Remoto",
+    "tipo": "Efetivo",
+    "area": "Design",
+    "publicada": "2d",
+    "descricao": "Pesquisa e interface do produto principal com foco em usabilidade."
+  },
+  {
+    "id": 4,
+    "empresa": "Studio Rosa",
+    "cargo": "Estagiário de UI/UX Design",
+    "salario": "R$ 1.5k-2k",
+    "modelo": "Presencial",
+    "tipo": "Estágio",
+    "area": "Design",
+    "publicada": "3d",
+    "descricao": "Criação de protótipos e apoio na padronização visual de telas."
+  },
+  {
+    "id": 5,
+    "empresa": "TechSul",
+    "cargo": "Gerente de Projetos Temporário",
+    "salario": "R$ 10k-14k",
+    "modelo": "Híbrido",
+    "tipo": "Temporário",
+    "area": "Gestão",
+    "publicada": "4d",
+    "descricao": "Coordenação de cronogramas e entregas de projeto por período determinado."
+  },
+  {
+    "id": 6,
+    "empresa": "SoftPlan",
+    "cargo": "Desenvolvedor Backend Temporário",
+    "salario": "R$ 9k-13k",
+    "modelo": "Remoto",
+    "tipo": "Temporário",
+    "area": "Engenharia",
+    "publicada": "5d",
+    "descricao": "Construção de APIs e integração de serviços em projeto temporário."
+  },
+  {
+    "id": 7,
+    "empresa": "Betha Sistemas",
+    "cargo": "Coordenador de Gestão de Produtos",
+    "salario": "R$ 15k-20k",
+    "modelo": "Presencial",
+    "tipo": "Efetivo",
+    "area": "Gestão",
+    "publicada": "6d",
+    "descricao": "Definição de roadmap e alinhamento entre áreas de produto e engenharia."
+  }
+]
