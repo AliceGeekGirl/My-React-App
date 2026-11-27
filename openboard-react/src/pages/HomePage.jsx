@@ -1,4 +1,6 @@
 import Depoimentos from "../components/Depoimentos";
+import Hero from "../components/Hero";
+import News from "../components/News";
 
 function HomePage() {
   return (
@@ -11,11 +13,12 @@ function HomePage() {
         </div>
       </header>
 
-      <section className="hero">
-        <h2>As melhores vagas em startups de tecnologia</h2>
-        <p>Encontre oportunidades reais em empresas curadas. Sem cadastro, sem barreiras.</p>
+      <Hero
+        titulo="As melhores vagas em startups de tecnologia"
+        subtitulo="Encontre oportunidades reais em empresas curadas. Sem cadastro, sem barreiras."
+      >
         <button className="btn">Publicar vaga</button>
-      </section>
+      </Hero>
 
       <main className="conteudo">
         <section className="vagas">
@@ -75,16 +78,8 @@ function HomePage() {
         </aside>
       </main>
 
-      <section className="hero">
-        <h2>Vagas novas, toda quinta-feira</h2>
-        <p>Um resumo curto das melhores vagas em startups direto no seu inbox.</p>
-        <div className="cadastro">
-          <form>
-            <input type="email" placeholder="seu@mail.com" />
-            <button type="submit" className="btn">Assinar</button>
-          </form>
-        </div>
-      </section>
+      {/* Agora usa o componente News com validação e sem recarregar */}
+      <News />
 
       <Depoimentos />
 
