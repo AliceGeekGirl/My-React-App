@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 // Rodapé do site, que aparece em todas as páginas via Layout[cite: 4, 8]
 function Footer() {
   return (
