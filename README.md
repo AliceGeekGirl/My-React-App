@@ -15,11 +15,12 @@ GitHub: BeatrizSartorPerego
 3. Abrir http://localhost:5173
 
 ## Requisitos funcionais
-[x] RF1 Home do OpenBoard  
-[ ] RF2 Vagas vindas da API  
-[ ] RF3 Newsletter  
-[ ] RF4 Filtros e título da aba  
-[ ] RF5 Busca por cargo  
-[ ] RF6 Detalhe da vaga e navegação  
-[ ] RF7 Cadastro de vaga  
-[ ] RF8 Vaga cadastrada fica salva  
+- [x] RF1 Home do OpenBoard  
+- [x] RF1 Home do OpenBoard
+- [x] RF2 Vagas vindas da API
+- [x] RF3 Newsletter
+- [ ] RF4 Filtros e título da aba
+- [ ] RF5 Busca por cargo
+- [x] RF6 Detalhe da vaga e navegação
+- [ ] RF7 Cadastro de vaga
+- [ ] RF8 Vaga cadastrada fica salva
