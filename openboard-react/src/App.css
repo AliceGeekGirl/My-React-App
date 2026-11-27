@@ -25,6 +25,12 @@ header a {
     text-decoration: none;
 }
 
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .hero {
     padding: 100px 40px;
     text-align: center;
@@ -113,6 +119,7 @@ header a {
 
 .vagas__badge {
     padding: 4px 8px;
+    margin-right: 8px;
     background-color: #2f2a38;
     color: #f5f2f7;
     border-radius: 4px;
@@ -177,16 +184,24 @@ header a {
 
 .depoimentos__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 40px;
-    gap: 32px;
+    gap: 24px;
+    width: 100%;
 }
 
 .depoimento-card {
+    flex: 1 1 260px;
+    max-width: 340px;
     background-color: #23202a;
     border: 1px solid #383244;
     border-radius: 8px;
     padding: 20px;
     color: #f5f2f7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer {
@@ -201,6 +216,12 @@ footer a {
     color: #f4a6c6;
     text-decoration: none;
     margin-left: 12px;
+}
+
+footer nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -285,6 +306,11 @@ footer a {
         width: 100%;
         padding-top: 24px;
         gap: 16px;
+    }
+    .depoimento-card {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
     }
 
     .cadastro input {
