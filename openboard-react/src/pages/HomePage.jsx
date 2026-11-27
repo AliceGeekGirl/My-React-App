@@ -1,32 +1,34 @@
-import { useEffect, useState } from "react"; // Hooks de estado e ciclo de vida/efeito do React
-import Depoimentos from "../components/Depoimentos"; // Seção de depoimentos com cartões
-import Hero from "../components/Hero"; // Componente reutilizável de destaque
-import News from "../components/News"; // Seção da newsletter com validação
-import VagaCard from "../components/VagaCard"; // Cartão individual de cada vaga
-import { buscarVagas } from "../services/vagasService"; // Função que busca as vagas no JSON via fetch
+import { useEffect, useState } from "react"; //Hooks de estado e ciclo de vida/efeito do React
+import Depoimentos from "../components/Depoimentos"; //Seção de depoimentos com cartões
+import Hero from "../components/Hero"; //Componente reutilizável de destaque
+import News from "../components/News"; //Seção da newsletter com validação
+import VagaCard from "../components/VagaCard"; //Cartão individual de cada vaga
+import { buscarVagas } from "../services/vagasService"; //Função que busca as vagas no JSON via fetch
 
-// Tela inicial da aplicação (rota "/")
+//Tela inicial da aplicação (rota "/")
 function HomePage() {
-  // Armazena a lista de vagas carregada da API/JSON
+  //Armazena a lista de vagas carregada da API/JSON
   const [vagas, setVagas] = useState([]);
-  // Controla se a busca inicial ainda está em andamento
+  //Controla se a busca inicial ainda está em andamento
   const [carregando, setCarregando] = useState(true);
-  // Guarda mensagem de erro caso o fetch falhe ou o arquivo não exista
+  //Guarda mensagem de erro caso o fetch falhe ou o arquivo não exista
   const [erro, setErro] = useState("");
 
-  // Executa uma vez quando a HomePage monta na tela (array de dependências vazio [])
+  //Executa uma vez quando a HomePage monta na tela (array de dependências vazio [])
   useEffect(() => {
     async function carregarVagas() {
       try {
-        setCarregando(true); // Mostra o aviso de carregamento antes de buscar
-        setErro(""); // Limpa qualquer erro anterior
-        const dados = await buscarVagas(); // Chama o service que faz fetch em /api/vagas.json
-        setVagas(dados); // Salva as vagas recebidas no estado
+        setCarregando(true); //Mostra o aviso de carregamento antes de buscar
+        setErro(""); //Limpa qualquer erro anterior
+        const dados = await buscarVagas(); //Chama o service que faz fetch em /api/vagas.json
+        setVagas(dados); //Salva as vagas recebidas no estado
       } catch {
-        // Se falhar (ex.: vagas.json renomeado), exibe o erro sem quebrar o resto da tela
+
+        //Se falhar (ex.: vagas.json renomeado), exibe o erro sem quebrar o resto da tela
         setErro("Não foi possível carregar as vagas no momento.");
       } finally {
-        // Encerra o estado de carregamento tanto no sucesso quanto no erro
+
+        //Encerra o estado de carregamento tanto no sucesso quanto no erro
         setCarregando(false);
       }
     }
@@ -36,14 +38,6 @@ function HomePage() {
 
   return (
     <div>
-      {/* Cabeçalho inicial da tela */}
-      <header>
-        <h1>OpenBoard</h1>
-        <div>
-          <a href="#entrar">Entrar</a>
-          <button className="btn">Publicar vaga</button>
-        </div>
-      </header>
 
       {/* Hero do topo reaproveitando o componente com children */}
       <Hero
@@ -104,18 +98,6 @@ function HomePage() {
       {/* Seção de depoimentos */}
       <Depoimentos />
 
-      {/* Rodapé da página */}
-      <footer>
-        <p>
-          <strong>OpenBoard</strong> 2026 - Todos os direitos reservados
-        </p>
-        <nav>
-          <span>Entrar</span>
-          <span>Publicar vaga</span>
-          <span>Sobre</span>
-          <span>Privacidade</span>
-        </nav>
-      </footer>
     </div>
   );
 }
