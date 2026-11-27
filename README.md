@@ -14,8 +14,7 @@ GitHub: BeatrizSartorPerego
    
 3. Abrir http://localhost:5173
 
-## Requisitos funcionais
-- [x] RF1 Home do OpenBoard  
+## Requisitos funcionais 
 - [x] RF1 Home do OpenBoard
 - [x] RF2 Vagas vindas da API
 - [x] RF3 Newsletter
